@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfólio de Deilton Matusse - Desenvolvedor Full Stack. Projetos em PHP, Django, React e WordPress.">
+    <meta property="og:title" content="Deilton Matusse | Desenvolvedor Full Stack">
+    <meta property="og:description"
+        content="Portfólio com projetos e habilidades em PHP, Python, JavaScript, WordPress.">
+    <meta property="og:image" content="media/1.jpg">
+    <meta property="og:type" content="website">
+    <title>Deilton Matusse | Desenvolvedor Full Stack</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-800">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-sm sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex items-center">
+                    <a href="#" class="text-xl font-bold gradient-text">DM</a>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">Sobre</a>
+                    <a href="#skills" class="nav-link">Habilidades</a>
+                    <a href="#projects" class="nav-link">Projetos</a>
+                    <a href="#contact" class="nav-link">Contato</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button id="menu-btn" class="text-gray-500 hover:text-gray-900">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white pb-4 px-4 shadow-lg">
+            <div class="flex flex-col space-y-3">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row items-center justify-between">
+                <div class="md:w-1/2 mb-10 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4">Olá, eu sou <span class="gradient-text">Deilton
+                            Matusse</span>
+                    </h1>
+                    <h2 class="text-2xl md:text-3xl font-semibold mb-6">Desenvolvedor Full Stack</h2>
+                    <p class="text-lg mb-8 text-gray-300">Eu construo experiências digitais excepcionais com PHP,
+                        Python,
+                        JavaScript e WordPress.</p>
+                    <div class="flex space-x-4">
+                        <a href="#contact"
+                            class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Entre
+                            em Contato</a>
+                        <a href="#projects"
+                            class="border border-white hover:bg-white hover:text-gray-900 text-white px-6 py-3 rounded-lg font-medium transition duration-300">Ver
+                            Projetos</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <div class="relative">
+                        <div
+                            class="w-64 h-64 md:w-80 md:h-80 bg-blue-400 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                            <img src="media/1.jpg" alt="John Doe" class="w-full h-full object-cover">
+                        </div>
+                        <div class="absolute -bottom-5 -right-5 bg-white rounded-lg shadow-lg p-3">
+                            <div class="flex items-center">
+                                <div class="bg-blue-100 p-2 rounded-full mr-2">
+                                    <i class="fas fa-laptop-code text-blue-600"></i>
+                                </div>
+                                <span class="font-semibold text-gray-800">3+ Anos de Experiência</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-12">Sobre <span class="gradient-text">Mim</span></h2>
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-2/3 md:pl-12 mx-auto">
+                    <h3 class="text-2xl font-semibold mb-4">Quem Sou</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Sou um desenvolvedor full-stack apaixonado com mais de 5 anos de experiência na construção de
+                        aplicações
+                        web e sites.
+                        Especializo-me em PHP/Laravel, Python/Django, JavaScript/React e desenvolvimento WordPress.
+                        Minha abordagem combina expertise técnica com resolução criativa de problemas para entregar
+                        soluções de alta qualidade,
+                        escaláveis.
+                    </p>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Quando não estou programando, você pode me encontrar contribuindo para projetos de código
+                        aberto, aprendendo novas
+                        tecnologias,
+                        ou compartilhando meu conhecimento por meio de blogs de tecnologia e eventos comunitários.
+                    </p>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="flex items-center">
+                            <i class="fas fa-calendar-alt text-blue-500 mr-2"></i>
+                            <span><strong>Experiência:</strong> 3+ Anos</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-graduation-cap text-blue-500 mr-2"></i>
+                            <span><strong>Educação:</strong> Universidade Eduardo Mondlane</span>
+                        </div>
+                        <div class="flex items-center">
+                            <i class="fas fa-map-marker-alt text-blue-500 mr-2"></i>
+                            <span><strong>Localização:</strong> Maputo Cidade, Moçambique</span>
+                        </div>
+                    </div>
+                    <div class="mt-8">
+                        <a href="media/CV.pdf" download
+                            class="inline-flex items-center px-6 py-3 bg-blue-500 hover:bg-blue-600 text-white rounded-lg font-medium transition duration-300">
+                            Download CV <i class="fas fa-download ml-2"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Minhas <span class="gradient-text">Habilidades</span></h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Trabalhei com uma variedade de tecnologias no mundo do desenvolvimento web. Aqui estão as ferramentas e
+                tecnologias em que sou mais proficiente.
+            </p>
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+                <!-- PHP/Laravel -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition duration-300">
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 skill-icon">
+                            <i class="fab fa-php text-3xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">PHP/Laravel</h3>
+                        <p class="text-gray-600 text-center">Construindo sistemas e APIs robustas com o framework
+                            Laravel.</p>
+                        <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 90%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python/Django -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition duration-300">
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 skill-icon">
+                            <i class="fab fa-python text-3xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">Python/Django</h3>
+                        <p class="text-gray-600 text-center">Desenvolvendo aplicações web escaláveis com o framework
+                            Django.
+                        </p>
+                        <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 85%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JavaScript/React -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition duration-300">
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 skill-icon">
+                            <i class="fab fa-js text-3xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">JavaScript/React</h3>
+                        <p class="text-gray-600 text-center">Criando interfaces de usuário interativas com React.js e
+                            Vue.js</p>
+                        <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 88%"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- WordPress -->
+                <div class="bg-white p-6 rounded-xl shadow-md card-hover transition duration-300">
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-4 skill-icon">
+                            <i class="fab fa-wordpress text-3xl text-blue-600"></i>
+                        </div>
+                        <h3 class="text-xl font-semibold mb-2">WordPress</h3>
+                        <p class="text-gray-600 text-center">Construindo temas e plugins personalizados para WordPress.
+                        </p>
+                        <div class="mt-4 w-full bg-gray-200 rounded-full h-2.5">
+                            <div class="bg-blue-600 h-2.5 rounded-full" style="width: 80%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                    <i class="fab fa-laravel text-2xl text-red-500 mr-2"></i>
+                    <span>Laravel</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                    <i class="fab fa-react text-2xl text-blue-400 mr-2"></i>
+                    <span>React</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                    <i class="fab fa-vuejs text-2xl text-green-500 mr-2"></i>
+                    <span>Vue.js</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                    <i class="fas fa-database text-2xl text-blue-600 mr-2"></i>
+                    <span>MySQL</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                    <i class="fab fa-git-alt text-2xl text-orange-500 mr-2"></i>
+                    <span>Git</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                    <i class="fab fa-github text-2xl text-black mr-2"></i>
+                    <span>GitHub</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                    <i class="fab fa-html5 text-2xl text-orange-500 mr-2"></i>
+                    <span>HTML5</span>
+                </div>
+                <div class="bg-white p-4 rounded-lg shadow-sm flex items-center">
+                    <i class="fab fa-css3-alt text-2xl text-blue-500 mr-2"></i>
+                    <span>CSS3</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Meus <span class="gradient-text">Projetos</span></h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Aqui estão alguns dos meus projetos recentes que mostram minha experiência em diferentes tecnologias.
+            </p>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="Task Management App" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">Aplicativo de Gerenciamento de Tarefas</h3>
+                            <span
+                                class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">Django</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Um aplicativo colaborativo de gerenciamento de tarefas com
+                            atualizações em tempo real,
+                            recursos de equipe e análises.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Python</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">Django</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">MySQL</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fas fa-eye-slash"></i> Disponível em breve
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
+                            alt="Corporate Website" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">Website Corporativo</h3>
+                            <span class="bg-black text-white text-xs font-medium px-2.5 py-0.5 rounded">HTML / CSS /
+                                JS</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Um tema personalizado do TailwindCSS com personalização avançada,
+                            SEO
+                            otimização e ajuste de desempenho.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">HTML</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">CSS</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">JavaScript</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">TailwindCSS</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="https://edmoafricatrading.com" class="text-blue-500 hover:text-blue-700">
+                                <i class="fas fa-eye"></i> Visitar
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl overflow-hidden shadow-lg card-hover transition duration-300">
+                    <div class="h-48 overflow-hidden">
+                        <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
+                            alt="CRM System" class="w-full h-full object-cover">
+                    </div>
+                    <div class="p-6">
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="text-xl font-semibold">Sistema de CRM</h3>
+                            <span class="bg-blue-600 text-white text-xs font-medium px-2.5 py-0.5 rounded">PHP</span>
+                        </div>
+                        <p class="text-gray-600 mb-4">Um sistema de gerenciamento de relacionamento com o cliente com
+                            rastreamento de leads, pipeline de vendas e relatórios.</p>
+                        <div class="flex flex-wrap gap-2 mb-4">
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">PHP</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">MVC</span>
+                            <span class="bg-gray-100 text-gray-800 text-xs px-2 py-1 rounded">MySQL</span>
+                        </div>
+                        <div class="flex space-x-3">
+                            <a href="#" class="text-gray-500 hover:text-gray-700">
+                                <i class="fas fa-eye-slash"></i> Disponível em breve
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-3xl font-bold text-center mb-4">Entre em <span class="gradient-text">Contato</span></h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+                Tem um projeto em mente ou deseja discutir oportunidades potenciais? Sinta-se à vontade para entrar em
+                contato!
+            </p>
+
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-10 md:mb-0 md:pr-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md">
+                        <h3 class="text-xl font-semibold mb-6">Envie-me uma mensagem</h3>
+                        <form id="whatsappForm">
+                            <div class="mb-4">
+                                <label for="name" class="block text-gray-700 mb-2">Seu Nome</label>
+                                <input type="text" id="name"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="email" class="block text-gray-700 mb-2">Seu Email</label>
+                                <input type="email" id="email"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required>
+                            </div>
+                            <div class="mb-4">
+                                <label for="subject" class="block text-gray-700 mb-2">Assunto</label>
+                                <input type="text" id="subject"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 mb-2">Mensagem</label>
+                                <textarea id="message" rows="5"
+                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                                    required></textarea>
+                            </div>
+                            <button type="submit"
+                                class="w-full bg-green-500 hover:bg-green-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                                Enviar Mensagem <i class="fas fa-paper-plane ml-2"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="md:w-1/2 md:pl-8">
+                    <div class="bg-white p-8 rounded-xl shadow-md h-full">
+                        <h3 class="text-xl font-semibold mb-6">Informações de Contato</h3>
+                        <p class="text-gray-600 mb-8">
+                            Estou disponível para trabalho freelance e oportunidades em tempo integral. Se você tiver
+                            alguma dúvida ou
+                            apenas quiser dizer olá, farei o meu melhor para responder!
+                        </p>
+
+                        <div class="space-y-4">
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-map-marker-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Localização</h4>
+                                    <p class="text-gray-600">Maputo Cidade, Moçambique</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-envelope text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Email</h4>
+                                    <p class="text-gray-600">deiltonmatusse8@gmail.com</p>
+                                </div>
+                            </div>
+
+                            <div class="flex items-start">
+                                <div class="bg-blue-100 p-3 rounded-full mr-4">
+                                    <i class="fas fa-phone-alt text-blue-600"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-medium text-gray-800">Telefone</h4>
+                                    <p class="text-gray-600">+258 87 499 1977</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-8">
+                            <h4 class="font-medium text-gray-800 mb-4">Siga-me</h4>
+                            <div class="flex space-x-4">
+                                <a href="#"
+                                    class="bg-gray-100 hover:bg-black hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="#"
+                                    class="bg-gray-100 hover:bg-blue-500 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-linkedin-in"></i>
+                                </a>
+                                <a href="#"
+                                    class="bg-gray-100 hover:bg-pink-600 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                                <a href="#"
+                                    class="bg-gray-100 hover:bg-blue-700 hover:text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <a href="#home" class="text-2xl font-bold gradient-text">Deilton Matusse</a>
+                    <p class="text-gray-400 mt-2">Desenvolvedor Full Stack</p>
+                </div>
+                <div class="flex flex-col md:flex-row md:space-x-8 space-y-4 md:space-y-0">
+                    <a href="#home" class="text-gray-400 hover:text-white">Home</a>
+                    <a href="#about" class="text-gray-400 hover:text-white">Sobre</a>
+                    <a href="#skills" class="text-gray-400 hover:text-white">Habilidades</a>
+                    <a href="#projects" class="text-gray-400 hover:text-white">Projetos</a>
+                    <a href="#contact" class="text-gray-400 hover:text-white">Contato</a>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 Deilton Matusse. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#home" id="backToTop"
+        class="fixed bottom-4 right-4 bg-blue-500 text-white p-3 rounded-full shadow-lg hover:bg-blue-600 transition duration-300 opacity-0 pointer-events-none">
+        <i class="fas fa-chevron-up"></i>
+    </a>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
