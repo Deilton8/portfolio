@@ -14,14 +14,793 @@
     animation: gradientMove 8s ease infinite;
 }
 
+/* Magic UI Components */
+.magic-text {
+    background: linear-gradient(135deg, #60a5fa, #a78bfa, #f472b6);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease infinite;
+}
+
+.magic-highlight {
+    position: relative;
+    z-index: 1;
+}
+
+.magic-highlight::after {
+    content: '';
+    position: absolute;
+    bottom: 2px;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    opacity: 0.3;
+    border-radius: 4px;
+    z-index: -1;
+}
+
+.magic-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 12px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+/* Magic UI Buttons */
+.magic-button-primary {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.magic-button-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px -5px rgba(59, 130, 246, 0.4);
+}
+
+.magic-button-primary::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: left 0.5s ease;
+}
+
+.magic-button-primary:hover::before {
+    left: 100%;
+}
+
+.magic-button-secondary {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.magic-button-secondary:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: translateY(-2px);
+}
+
+.magic-button-outline {
+    background: transparent;
+    border: 2px solid #3b82f6;
+    color: #3b82f6;
+    position: relative;
+    overflow: hidden;
+}
+
+.magic-button-outline:hover {
+    background: rgba(59, 130, 246, 0.1);
+    transform: translateY(-2px);
+}
+
+.magic-button-large {
+    padding: 16px 32px;
+    font-size: 1.125rem;
+}
+
+/* Magic UI Cards */
+.magic-floating-card {
+    background: white;
+    border-radius: 20px;
+    padding: 16px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    transition: all 0.3s ease;
+}
+
+.magic-floating-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.magic-floating-card-secondary {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+}
+
+/* Magic UI Badges */
+.magic-badge {
+    display: inline-block;
+    padding: 8px 16px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+.magic-section-badge {
+    display: inline-block;
+    padding: 8px 24px;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.1), rgba(139, 92, 246, 0.1));
+    border-radius: 20px;
+    border: 1px solid rgba(59, 130, 246, 0.2);
+}
+
+.magic-section-badge-dark {
+    display: inline-block;
+    padding: 8px 24px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+}
+
+/* Magic UI Stats Grid */
+.magic-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+}
+
+.magic-stat-card {
+    background: white;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.magic-stat-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.magic-stat-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+}
+
+.magic-icon-blue {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.magic-icon-purple {
+    background: linear-gradient(135deg, #8b5cf6, #7c3aed);
+}
+
+.magic-icon-green {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.magic-icon-orange {
+    background: linear-gradient(135deg, #f97316, #ea580c);
+}
+
+.magic-icon-red {
+    background: linear-gradient(135deg, #ef4444, #dc2626);
+}
+
+.magic-icon-yellow {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.magic-icon-cyan {
+    background: linear-gradient(135deg, #06b6d4, #0891b2);
+}
+
+.magic-icon-emerald {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.magic-icon-amber {
+    background: linear-gradient(135deg, #f59e0b, #d97706);
+}
+
+.magic-icon-sky {
+    background: linear-gradient(135deg, #0ea5e9, #0284c7);
+}
+
+/* Magic UI Skill Cards */
+.magic-skill-card {
+    background: white;
+    padding: 32px;
+    border-radius: 24px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.magic-skill-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.magic-skill-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.3s ease;
+}
+
+.magic-skill-card:hover::before {
+    transform: scaleX(1);
+}
+
+.magic-skill-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 24px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Magic UI Progress Bars */
+.magic-progress-bar {
+    width: 100%;
+    height: 12px;
+    background: rgba(0, 0, 0, 0.05);
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.magic-progress-fill {
+    height: 100%;
+    border-radius: 6px;
+    width: 0%;
+    transition: width 1.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.magic-progress-blue {
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+}
+
+.magic-progress-green {
+    background: linear-gradient(90deg, #10b981, #34d399);
+}
+
+.magic-progress-yellow {
+    background: linear-gradient(90deg, #f59e0b, #fbbf24);
+}
+
+.magic-progress-sky {
+    background: linear-gradient(90deg, #0ea5e9, #38bdf8);
+}
+
+/* Magic UI Tech Stack */
+.magic-tech-stack {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+@media (min-width: 768px) {
+    .magic-tech-stack {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .magic-tech-stack {
+        grid-template-columns: repeat(6, 1fr);
+    }
+}
+
+.magic-tech-item {
+    background: white;
+    padding: 24px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.magic-tech-item:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+}
+
+.magic-tech-icon {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Magic UI Project Cards */
+.magic-project-card {
+    background: white;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.magic-project-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.15);
+}
+
+.magic-project-image {
+    position: relative;
+    height: 224px;
+    overflow: hidden;
+}
+
+.magic-project-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.magic-project-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), transparent);
+}
+
+.magic-project-tag {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 0.875rem;
+    font-weight: 600;
+    color: white;
+}
+
+.magic-tag-green {
+    background: linear-gradient(135deg, #10b981, #059669);
+}
+
+.magic-tag-dark {
+    background: linear-gradient(135deg, #374151, #1f2937);
+}
+
+.magic-tag-blue {
+    background: linear-gradient(135deg, #3b82f6, #2563eb);
+}
+
+.magic-project-content {
+    padding: 32px;
+}
+
+.magic-project-title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: #1f2937;
+    margin-bottom: 12px;
+    transition: color 0.3s ease;
+}
+
+.magic-project-card:hover .magic-project-title {
+    color: #3b82f6;
+}
+
+.magic-project-description {
+    color: #6b7280;
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+.magic-project-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.magic-tag {
+    padding: 4px 12px;
+    border-radius: 16px;
+    font-size: 0.75rem;
+    font-weight: 500;
+}
+
+.magic-tag-blue {
+    background: rgba(59, 130, 246, 0.1);
+    color: #1d4ed8;
+}
+
+.magic-tag-green {
+    background: rgba(16, 185, 129, 0.1);
+    color: #047857;
+}
+
+.magic-tag-amber {
+    background: rgba(245, 158, 11, 0.1);
+    color: #b45309;
+}
+
+.magic-tag-orange {
+    background: rgba(249, 115, 22, 0.1);
+    color: #c2410c;
+}
+
+.magic-tag-teal {
+    background: rgba(20, 184, 166, 0.1);
+    color: #0f766e;
+}
+
+.magic-tag-purple {
+    background: rgba(139, 92, 246, 0.1);
+    color: #7c3aed;
+}
+
+.magic-tag-gray {
+    background: rgba(107, 114, 128, 0.1);
+    color: #4b5563;
+}
+
+.magic-project-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.magic-project-link {
+    color: #6b7280;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.magic-project-link:hover {
+    color: #374151;
+}
+
+.magic-link-external {
+    color: #3b82f6;
+}
+
+.magic-link-external:hover {
+    color: #2563eb;
+}
+
+.magic-project-arrow {
+    width: 40px;
+    height: 40px;
+    background: #f3f4f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+}
+
+.magic-project-card:hover .magic-project-arrow {
+    background: rgba(59, 130, 246, 0.1);
+    color: #3b82f6;
+}
+
+/* Magic UI Background Effects */
+.grid-pattern {
+    background-image:
+        linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+    background-size: 50px 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.dot-pattern {
+    background-image: radial-gradient(rgba(59, 130, 246, 0.2) 1px, transparent 1px);
+    background-size: 50px 50px;
+    width: 100%;
+    height: 100%;
+}
+
+.magic-background-glow {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+    opacity: 0.3;
+}
+
+.glow-blue {
+    top: 20%;
+    left: 10%;
+    width: 288px;
+    height: 288px;
+    background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+}
+
+.glow-purple {
+    bottom: 20%;
+    right: 10%;
+    width: 288px;
+    height: 288px;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+.glow-blue-large {
+    top: 20%;
+    left: 25%;
+    width: 384px;
+    height: 384px;
+    background: linear-gradient(135deg, #3b82f6, #0ea5e9);
+}
+
+.glow-purple-large {
+    bottom: 20%;
+    right: 25%;
+    width: 384px;
+    height: 384px;
+    background: linear-gradient(135deg, #8b5cf6, #ec4899);
+}
+
+/* Magic UI Form Elements */
+.magic-form-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.magic-input {
+    width: 100%;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.magic-input:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.magic-input::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+.magic-textarea {
+    width: 100%;
+    padding: 16px 24px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+    resize: none;
+}
+
+.magic-textarea:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.magic-textarea::placeholder {
+    color: rgba(255, 255, 255, 0.4);
+}
+
+/* Magic UI Contact Cards */
+.magic-contact-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.magic-contact-item {
+    display: flex;
+    align-items: flex-start;
+    transition: all 0.3s ease;
+}
+
+.magic-contact-item:hover {
+    transform: translateX(8px);
+}
+
+.magic-contact-icon {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 20px;
+    flex-shrink: 0;
+}
+
+/* Magic UI Social Cards */
+.magic-social-card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 24px;
+    padding: 32px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+}
+
+.magic-social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.magic-social-link {
+    width: 56px;
+    height: 56px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.magic-social-link:hover {
+    transform: translateY(-4px);
+}
+
+.magic-social-github:hover {
+    background: #000;
+    color: white;
+}
+
+.magic-social-linkedin:hover {
+    background: #0077b5;
+    color: white;
+}
+
+.magic-social-instagram:hover {
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+    color: white;
+}
+
+.magic-social-facebook:hover {
+    background: #1877f2;
+    color: white;
+}
+
+/* Magic UI Footer */
+.magic-footer-link {
+    color: #9ca3af;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.magic-footer-link:hover {
+    color: white;
+}
+
+.magic-footer-link::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    transition: width 0.3s ease;
+}
+
+.magic-footer-link:hover::after {
+    width: 100%;
+}
+
+.magic-footer-social {
+    color: #9ca3af;
+    transition: all 0.3s ease;
+}
+
+.magic-footer-social:hover {
+    color: white;
+    transform: scale(1.2);
+}
+
+.magic-back-to-top {
+    background: linear-gradient(135deg, #3b82f6, #8b5cf6);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.magic-back-to-top:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 25px rgba(59, 130, 246, 0.4);
+}
+
+/* Typography */
+.magic-heading {
+    position: relative;
+    display: inline-block;
+}
+
+.magic-heading::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #3b82f6, #8b5cf6);
+    border-radius: 2px;
+}
+
+.magic-heading-dark::after {
+    background: linear-gradient(90deg, #60a5fa, #a78bfa);
+}
+
+.magic-subheading {
+    color: #6b7280;
+    line-height: 1.6;
+}
+
+.magic-subheading-dark {
+    color: #d1d5db;
+    line-height: 1.6;
+}
+
+.magic-paragraph {
+    line-height: 1.8;
+    color: #4b5563;
+}
+
 /* Animations */
 @keyframes gradientMove {
     0% {
         background-position: 0% 50%;
     }
+
     50% {
         background-position: 100% 50%;
     }
+
     100% {
         background-position: 0% 50%;
     }
@@ -31,21 +810,27 @@
     0% {
         transform: translate(0px, 0px) scale(1);
     }
+
     33% {
         transform: translate(30px, -50px) scale(1.1);
     }
+
     66% {
         transform: translate(-20px, 20px) scale(0.9);
     }
+
     100% {
         transform: translate(0px, 0px) scale(1);
     }
 }
 
 @keyframes float {
-    0%, 100% {
+
+    0%,
+    100% {
         transform: translateY(0px);
     }
+
     50% {
         transform: translateY(-20px);
     }
@@ -112,11 +897,13 @@
 }
 
 /* Form Elements */
-input, textarea {
+input,
+textarea {
     transition: all 0.3s ease;
 }
 
-input:focus, textarea:focus {
+input:focus,
+textarea:focus {
     box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
@@ -155,8 +942,8 @@ html {
 .gradient-border {
     position: relative;
     border: double 2px transparent;
-    background-image: linear-gradient(white, white), 
-                      linear-gradient(135deg, #3b82f6, #8b5cf6);
+    background-image: linear-gradient(white, white),
+        linear-gradient(135deg, #3b82f6, #8b5cf6);
     background-origin: border-box;
     background-clip: content-box, border-box;
 }
@@ -170,4 +957,30 @@ html {
     from {
         width: 0%;
     }
+}
+
+/* Particle Background */
+#particles-js {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+}
+
+/* Scroll Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.animate-on-scroll {
+    opacity: 0;
+    animation: fadeInUp 0.6s ease forwards;
 }

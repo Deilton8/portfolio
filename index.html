@@ -5,29 +5,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="Portfólio de Deilton Matusse - Desenvolvedor Full Stack. Projetos em PHP, Django, React e WordPress.">
+        content="Deilton Matusse - Desenvolvedor Full Stack especializado em PHP, Python, JavaScript e WordPress. Transformo ideias em soluções digitais inovadoras.">
+
+    <!-- Open Graph -->
     <meta property="og:title" content="Deilton Matusse | Desenvolvedor Full Stack">
     <meta property="og:description"
-        content="Portfólio com projetos e habilidades em PHP, Python, JavaScript, WordPress.">
-    <meta property="og:image" content="media/1.jpg">
+        content="Desenvolvedor Full Stack especializado em PHP, Python, JavaScript e WordPress.">
+    <meta property="og:image" content="/media/og-image.jpg">
     <meta property="og:type" content="website">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="/uploads/logo.png">
+
     <title>Deilton Matusse | Desenvolvedor Full Stack</title>
+
+    <!-- CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lucide@latest/dist/lucide.css">
     <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/magic-ui/dist/magic-ui.css" rel="stylesheet">
 </head>
 
 <body class="font-sans bg-gray-50 text-gray-800 overflow-x-hidden">
+    <!-- Particle Background -->
+    <div id="particles-js" class="fixed inset-0 z-0"></div>
+
     <!-- Navigation -->
     <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-200/50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-16">
+            <div class="flex justify-between h-32">
                 <div class="flex items-center">
-                    <a href="#home" class="text-2xl font-bold gradient-text relative group">
-                        <span class="relative z-10">DM</span>
+                    <a href="#home" class="relative group">
+                        <!-- Logotipo como imagem -->
+                        <img src="uploads/logo.png" alt="Deilton Matusse Logo"
+                            class="h-32 w-32 transition-all duration-300 group-hover:scale-110"
+                            onerror="this.onerror=null; this.src='https://via.placeholder.com/100x40/3b82f6/ffffff?text=DM+Logo';">
+                        <!-- Efeito de blur no hover -->
                         <div
-                            class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-0 group-hover:opacity-50 transition duration-300">
+                            class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-0 group-hover:opacity-50 transition duration-300 -z-10">
                         </div>
                     </a>
                 </div>
@@ -81,6 +97,11 @@
     <section id="home" class="hero-gradient text-white py-24 relative overflow-hidden">
         <!-- Animated background elements -->
         <div class="absolute inset-0 overflow-hidden">
+            <!-- Magic UI Grid Background -->
+            <div class="absolute inset-0 opacity-10">
+                <div class="grid-pattern"></div>
+            </div>
+
             <div
                 class="absolute -top-40 -right-40 w-80 h-80 bg-blue-500 rounded-full mix-blend-multiply filter blur-3xl opacity-20 animate-blob">
             </div>
@@ -95,46 +116,57 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
             <div class="flex flex-col md:flex-row items-center justify-between">
                 <div class="md:w-1/2 mb-12 md:mb-0">
-                    <div
-                        class="inline-block px-4 py-1 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-6">
+                    <!-- Magic UI Badge -->
+                    <div class="magic-badge mb-6">
                         <span class="text-sm font-medium">👋 Olá, bem-vindo ao meu portfólio</span>
                     </div>
+
                     <h1 class="text-5xl md:text-6xl font-bold mb-6 leading-tight">
-                        Eu sou <span class="gradient-text">Deilton Matusse</span>
+                        Eu sou <span class="gradient-text magic-text">Deilton Matusse</span>
                     </h1>
-                    <h2 class="text-2xl md:text-3xl font-semibold mb-8 text-gray-200">
-                        Desenvolvedor <span class="text-white font-bold">Full Stack</span>
-                    </h2>
+
+                    <!-- Magic UI Typography -->
+                    <div class="magic-typography mb-8">
+                        <h2 class="text-2xl md:text-3xl font-semibold text-gray-200">
+                            Desenvolvedor <span class="text-white font-bold magic-highlight">Full Stack</span>
+                        </h2>
+                    </div>
+
                     <p class="text-xl mb-10 text-gray-300 max-w-2xl">
                         Transformo ideias em realidade digital com soluções modernas em
-                        <span class="text-white font-medium">PHP</span>,
-                        <span class="text-white font-medium">Python</span>,
-                        <span class="text-white font-medium">JavaScript</span> e
-                        <span class="text-white font-medium">WordPress</span>.
+                        <span class="text-white font-medium magic-tag">PHP</span>,
+                        <span class="text-white font-medium magic-tag">Python</span>,
+                        <span class="text-white font-medium magic-tag">JavaScript</span> e
+                        <span class="text-white font-medium magic-tag">WordPress</span>.
                     </p>
+
                     <div class="flex flex-wrap gap-4">
+                        <!-- Magic UI Button -->
                         <a href="#contact"
-                            class="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-xl font-medium transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-2xl">
+                            class="magic-button-primary group relative px-8 py-4 text-white rounded-xl font-medium transition-all duration-300">
                             <span class="relative z-10">Entre em Contato</span>
-                            <div
-                                class="absolute inset-0 bg-white/20 rounded-xl blur opacity-0 group-hover:opacity-100 transition duration-300">
-                            </div>
                             <i class="fas fa-arrow-right ml-3 transition-transform group-hover:translate-x-2"></i>
                         </a>
+
+                        <!-- Magic UI Secondary Button -->
                         <a href="#projects"
-                            class="group relative px-8 py-4 bg-white/10 backdrop-blur-sm border border-white/20 hover:bg-white/20 text-white rounded-xl font-medium transition-all duration-300 transform hover:-translate-y-1">
+                            class="magic-button-secondary group relative px-8 py-4 text-white rounded-xl font-medium transition-all duration-300">
                             <span class="relative z-10">Ver Projetos</span>
                             <i class="fas fa-code ml-3"></i>
                         </a>
                     </div>
                 </div>
+
                 <div class="md:w-1/2 flex justify-center">
                     <div class="relative">
-                        <div
-                            class="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/30 shadow-2xl">
-                            <img src="uploads/1.jpg" alt="Deilton Matusse"
-                                class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
-                            <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
+                        <!-- Magic UI Card -->
+                        <div>
+                            <div
+                                class="relative w-72 h-72 md:w-96 md:h-96 rounded-full overflow-hidden border-4 border-white/30">
+                                <img src="uploads/1.jpg" alt="Deilton Matusse"
+                                    class="w-full h-full object-cover hover:scale-110 transition-transform duration-700">
+                                <div class="absolute inset-0 bg-gradient-to-t from-blue-900/30 to-transparent"></div>
+                            </div>
                         </div>
 
                         <!-- Floating badges -->
@@ -173,79 +205,81 @@
         <div class="absolute inset-0 bg-gradient-to-b from-blue-50/50 to-transparent"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
-                <div class="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 mb-4">
-                    <span class="text-sm font-medium gradient-text">SOBRE MIM</span>
+                <!-- Magic UI Section Badge -->
+                <div>
+                    <div class="magic-section-badge mb-4">
+                        <span class="text-sm font-medium gradient-text">SOBRE MIM</span>
+                    </div>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Conheça o <span
-                        class="gradient-text">Desenvolvedor</span></h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 magic-heading">
+                    Conheça o <span class="gradient-text magic-text">Desenvolvedor</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto magic-subheading">
                     Apaixonado por criar soluções digitais que fazem a diferença
                 </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
                 <div class="relative">
-                    <div class="bg-gradient-to-br from-blue-500/10 to-purple-500/10 rounded-3xl p-8 shadow-2xl">
-                        <div class="grid grid-cols-2 gap-6">
-                            <div
-                                class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                                <div
-                                    class="bg-gradient-to-br from-blue-500 to-blue-600 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                                    <i class="fas fa-calendar-alt text-white text-xl"></i>
-                                </div>
-                                <h4 class="font-bold text-gray-900 mb-2">Experiência</h4>
-                                <p class="text-gray-600">3+ Anos</p>
+                    <!-- Magic UI Stats Grid -->
+                    <div class="magic-stats-grid">
+                        <div class="magic-stat-card">
+                            <div class="magic-stat-icon magic-icon-blue">
+                                <i class="fas fa-calendar-alt text-white text-xl"></i>
                             </div>
-                            <div
-                                class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                                <div
-                                    class="bg-gradient-to-br from-purple-500 to-purple-600 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                                    <i class="fas fa-graduation-cap text-white text-xl"></i>
-                                </div>
-                                <h4 class="font-bold text-gray-900 mb-2">Educação</h4>
-                                <p class="text-gray-600">Universidade Eduardo Mondlane</p>
+                            <h4 class="font-bold text-gray-900 mb-2">Experiência</h4>
+                            <p class="text-gray-600">3+ Anos</p>
+                        </div>
+
+                        <div class="magic-stat-card">
+                            <div class="magic-stat-icon magic-icon-purple">
+                                <i class="fas fa-graduation-cap text-white text-xl"></i>
                             </div>
-                            <div
-                                class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                                <div
-                                    class="bg-gradient-to-br from-green-500 to-green-600 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                                    <i class="fas fa-map-marker-alt text-white text-xl"></i>
-                                </div>
-                                <h4 class="font-bold text-gray-900 mb-2">Localização</h4>
-                                <p class="text-gray-600">Maputo Cidade, Moçambique</p>
+                            <h4 class="font-bold text-gray-900 mb-2">Educação</h4>
+                            <p class="text-gray-600">Universidade Eduardo Mondlane</p>
+                        </div>
+
+                        <div class="magic-stat-card">
+                            <div class="magic-stat-icon magic-icon-green">
+                                <i class="fas fa-map-marker-alt text-white text-xl"></i>
                             </div>
-                            <div
-                                class="bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                                <div
-                                    class="bg-gradient-to-br from-orange-500 to-orange-600 w-12 h-12 rounded-xl flex items-center justify-center mb-4">
-                                    <i class="fas fa-code text-white text-xl"></i>
-                                </div>
-                                <h4 class="font-bold text-gray-900 mb-2">Tecnologias</h4>
-                                <p class="text-gray-600">12+ Dominadas</p>
+                            <h4 class="font-bold text-gray-900 mb-2">Localização</h4>
+                            <p class="text-gray-600">Maputo Cidade, Moçambique</p>
+                        </div>
+
+                        <div class="magic-stat-card">
+                            <div class="magic-stat-icon magic-icon-orange">
+                                <i class="fas fa-code text-white text-xl"></i>
                             </div>
+                            <h4 class="font-bold text-gray-900 mb-2">Tecnologias</h4>
+                            <p class="text-gray-600">12+ Dominadas</p>
                         </div>
                     </div>
                 </div>
 
                 <div>
-                    <h3 class="text-3xl font-bold mb-6">Minha <span class="gradient-text">Jornada</span></h3>
-                    <p class="text-gray-600 mb-6 leading-relaxed text-lg">
+                    <div class="text-center">
+                        <h3 class="text-3xl font-bold mb-6 magic-heading">Minha <span
+                                class="gradient-text">Jornada</span>
+                        </h3>
+                    </div>
+                    <p class="text-gray-600 mb-6 leading-relaxed text-lg magic-paragraph">
                         Sou um desenvolvedor full-stack apaixonado com mais de 3 anos de experiência na construção de
                         aplicações web e sites. Especializo-me em PHP/Laravel, Python/Django, JavaScript/React e
                         desenvolvimento WordPress.
                     </p>
-                    <p class="text-gray-600 mb-8 leading-relaxed text-lg">
+                    <p class="text-gray-600 mb-8 leading-relaxed text-lg magic-paragraph">
                         Minha abordagem combina expertise técnica com resolução criativa de problemas para entregar
                         soluções de alta qualidade e escaláveis que impulsionam o sucesso dos negócios.
                     </p>
                     <div class="flex flex-wrap gap-4">
                         <a href="uploads/CV.pdf" download
-                            class="group relative px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-xl font-medium transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-2xl">
+                            class="magic-button-primary group relative px-8 py-4 text-white rounded-xl font-medium transition-all duration-300">
                             <span class="relative z-10">Download CV</span>
                             <i class="fas fa-download ml-3 transition-transform group-hover:translate-y-1"></i>
                         </a>
                         <a href="#contact"
-                            class="group relative px-8 py-4 bg-white border-2 border-blue-500 hover:bg-blue-50 text-blue-600 rounded-xl font-medium transition-all duration-300 transform hover:-translate-y-1">
+                            class="magic-button-outline group relative px-8 py-4 rounded-xl font-medium transition-all duration-300">
                             <span class="relative z-10">Vamos Conversar</span>
                             <i class="fas fa-comment ml-3"></i>
                         </a>
@@ -257,185 +291,149 @@
 
     <!-- Skills Section -->
     <section id="skills" class="py-24 bg-gradient-to-b from-gray-50 to-white relative overflow-hidden">
+        <!-- Magic UI Background Pattern -->
+        <div class="absolute inset-0 opacity-5">
+            <div class="dot-pattern"></div>
+        </div>
+
         <div class="absolute top-0 left-0 w-full h-32 bg-gradient-to-b from-white to-transparent"></div>
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
-                <div class="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 mb-4">
-                    <span class="text-sm font-medium gradient-text">HABILIDADES TÉCNICAS</span>
+                <div>
+                    <div class="magic-section-badge mb-4">
+                        <span class="text-sm font-medium gradient-text">HABILIDADES TÉCNICAS</span>
+                    </div>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Minhas <span class="gradient-text">Habilidades</span>
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 magic-heading">
+                    Minhas <span class="gradient-text magic-text">Habilidades</span>
                 </h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto magic-subheading">
                     Domínio completo em tecnologias modernas para desenvolvimento web
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 mb-16">
-                <!-- PHP/Laravel -->
-                <div class="group bg-white p-8 rounded-3xl shadow-xl card-hover relative overflow-hidden">
-                    <div
-                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-full transform translate-x-10 -translate-y-10 opacity-10 group-hover:opacity-20 transition duration-500">
+                <!-- PHP/Laravel - Magic UI Skill Card -->
+                <div class="magic-skill-card group">
+                    <div class="magic-skill-icon magic-icon-blue">
+                        <i class="fab fa-php text-3xl text-white"></i>
                     </div>
-                    <div class="flex flex-col items-center relative z-10">
-                        <div
-                            class="w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl flex items-center justify-center mb-6 skill-icon shadow-lg">
-                            <i class="fab fa-php text-3xl text-white"></i>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">PHP/Laravel</h3>
+                    <p class="text-gray-600 text-center mb-6">Sistemas e APIs robustas com framework Laravel</p>
+                    <div class="w-full">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-700">Proficiência</span>
+                            <span class="text-sm font-bold gradient-text">90%</span>
                         </div>
-                        <h3 class="text-2xl font-bold mb-3 text-gray-900">PHP/Laravel</h3>
-                        <p class="text-gray-600 text-center mb-6">Sistemas e APIs robustas com framework Laravel</p>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-sm font-medium text-gray-700">Proficiência</span>
-                                <span class="text-sm font-bold gradient-text">90%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-3">
-                                <div class="bg-gradient-to-r from-blue-500 to-blue-600 h-3 rounded-full transition-all duration-1000"
-                                    style="width: 0%" data-width="90"></div>
-                            </div>
+                        <div class="magic-progress-bar">
+                            <div class="magic-progress-fill magic-progress-blue" data-width="90"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- Python/Django -->
-                <div class="group bg-white p-8 rounded-3xl shadow-xl card-hover relative overflow-hidden">
-                    <div
-                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-full transform translate-x-10 -translate-y-10 opacity-10 group-hover:opacity-20 transition duration-500">
+                <div class="magic-skill-card group">
+                    <div class="magic-skill-icon magic-icon-green">
+                        <i class="fab fa-python text-3xl text-white"></i>
                     </div>
-                    <div class="flex flex-col items-center relative z-10">
-                        <div
-                            class="w-20 h-20 bg-gradient-to-br from-green-500 to-green-600 rounded-2xl flex items-center justify-center mb-6 skill-icon shadow-lg">
-                            <i class="fab fa-python text-3xl text-white"></i>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">Python/Django</h3>
+                    <p class="text-gray-600 text-center mb-6">Aplicações web escaláveis com Django</p>
+                    <div class="w-full">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-700">Proficiência</span>
+                            <span class="text-sm font-bold gradient-text">70%</span>
                         </div>
-                        <h3 class="text-2xl font-bold mb-3 text-gray-900">Python/Django</h3>
-                        <p class="text-gray-600 text-center mb-6">Aplicações web escaláveis com Django</p>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-sm font-medium text-gray-700">Proficiência</span>
-                                <span class="text-sm font-bold gradient-text">85%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-3">
-                                <div class="bg-gradient-to-r from-green-500 to-green-600 h-3 rounded-full transition-all duration-1000"
-                                    style="width: 0%" data-width="85"></div>
-                            </div>
+                        <div class="magic-progress-bar">
+                            <div class="magic-progress-fill magic-progress-green" data-width="70"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- JavaScript/React -->
-                <div class="group bg-white p-8 rounded-3xl shadow-xl card-hover relative overflow-hidden">
-                    <div
-                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-full transform translate-x-10 -translate-y-10 opacity-10 group-hover:opacity-20 transition duration-500">
+                <div class="magic-skill-card group">
+                    <div class="magic-skill-icon magic-icon-yellow">
+                        <i class="fab fa-js text-3xl text-white"></i>
                     </div>
-                    <div class="flex flex-col items-center relative z-10">
-                        <div
-                            class="w-20 h-20 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-2xl flex items-center justify-center mb-6 skill-icon shadow-lg">
-                            <i class="fab fa-js text-3xl text-white"></i>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">JavaScript/React</h3>
+                    <p class="text-gray-600 text-center mb-6">Interfaces interativas com React.js e Vue.js</p>
+                    <div class="w-full">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-700">Proficiência</span>
+                            <span class="text-sm font-bold gradient-text">75%</span>
                         </div>
-                        <h3 class="text-2xl font-bold mb-3 text-gray-900">JavaScript/React</h3>
-                        <p class="text-gray-600 text-center mb-6">Interfaces interativas com React.js e Vue.js</p>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-sm font-medium text-gray-700">Proficiência</span>
-                                <span class="text-sm font-bold gradient-text">88%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-3">
-                                <div class="bg-gradient-to-r from-yellow-500 to-yellow-600 h-3 rounded-full transition-all duration-1000"
-                                    style="width: 0%" data-width="88"></div>
-                            </div>
+                        <div class="magic-progress-bar">
+                            <div class="magic-progress-fill magic-progress-yellow" data-width="75"></div>
                         </div>
                     </div>
                 </div>
 
                 <!-- WordPress -->
-                <div class="group bg-white p-8 rounded-3xl shadow-xl card-hover relative overflow-hidden">
-                    <div
-                        class="absolute top-0 right-0 w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-500 rounded-full transform translate-x-10 -translate-y-10 opacity-10 group-hover:opacity-20 transition duration-500">
+                <div class="magic-skill-card group">
+                    <div class="magic-skill-icon magic-icon-sky">
+                        <i class="fab fa-wordpress text-3xl text-white"></i>
                     </div>
-                    <div class="flex flex-col items-center relative z-10">
-                        <div
-                            class="w-20 h-20 bg-gradient-to-br from-blue-400 to-blue-500 rounded-2xl flex items-center justify-center mb-6 skill-icon shadow-lg">
-                            <i class="fab fa-wordpress text-3xl text-white"></i>
+                    <h3 class="text-2xl font-bold mb-3 text-gray-900">WordPress</h3>
+                    <p class="text-gray-600 text-center mb-6">Temas e plugins personalizados para WordPress</p>
+                    <div class="w-full">
+                        <div class="flex justify-between mb-2">
+                            <span class="text-sm font-medium text-gray-700">Proficiência</span>
+                            <span class="text-sm font-bold gradient-text">80%</span>
                         </div>
-                        <h3 class="text-2xl font-bold mb-3 text-gray-900">WordPress</h3>
-                        <p class="text-gray-600 text-center mb-6">Temas e plugins personalizados para WordPress</p>
-                        <div class="w-full">
-                            <div class="flex justify-between mb-2">
-                                <span class="text-sm font-medium text-gray-700">Proficiência</span>
-                                <span class="text-sm font-bold gradient-text">80%</span>
-                            </div>
-                            <div class="w-full bg-gray-200 rounded-full h-3">
-                                <div class="bg-gradient-to-r from-blue-400 to-blue-500 h-3 rounded-full transition-all duration-1000"
-                                    style="width: 0%" data-width="80"></div>
-                            </div>
+                        <div class="magic-progress-bar">
+                            <div class="magic-progress-fill magic-progress-sky" data-width="80"></div>
                         </div>
                     </div>
                 </div>
             </div>
 
             <div class="text-center mb-12">
-                <h3 class="text-2xl font-bold text-gray-900 mb-8">Tecnologias que <span
-                        class="gradient-text">Utilizo</span></h3>
+                <h3 class="text-2xl font-bold text-gray-900 mb-8 magic-heading">
+                    Tecnologias que <span class="gradient-text magic-text">Utilizo</span>
+                </h3>
             </div>
-            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
-                <div
-                    class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-red-500 to-red-600 rounded-xl flex items-center justify-center mb-4 shadow-md">
-                            <i class="fab fa-laravel text-2xl text-white"></i>
-                        </div>
-                        <span class="font-semibold text-gray-800">Laravel</span>
+
+            <!-- Magic UI Tech Stack -->
+            <div class="magic-tech-stack">
+                <div class="magic-tech-item">
+                    <div class="magic-tech-icon magic-icon-red">
+                        <i class="fab fa-laravel text-2xl text-white"></i>
                     </div>
+                    <span class="font-semibold text-gray-800">Laravel</span>
                 </div>
-                <div
-                    class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-blue-400 to-blue-500 rounded-xl flex items-center justify-center mb-4 shadow-md">
-                            <i class="fab fa-react text-2xl text-white"></i>
-                        </div>
-                        <span class="font-semibold text-gray-800">React</span>
+
+                <div class="magic-tech-item">
+                    <div class="magic-tech-icon magic-icon-cyan">
+                        <i class="fab fa-react text-2xl text-white"></i>
                     </div>
+                    <span class="font-semibold text-gray-800">React</span>
                 </div>
-                <div
-                    class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-green-500 to-green-600 rounded-xl flex items-center justify-center mb-4 shadow-md">
-                            <i class="fab fa-vuejs text-2xl text-white"></i>
-                        </div>
-                        <span class="font-semibold text-gray-800">Vue.js</span>
+
+                <div class="magic-tech-item">
+                    <div class="magic-tech-icon magic-icon-emerald">
+                        <i class="fab fa-vuejs text-2xl text-white"></i>
                     </div>
+                    <span class="font-semibold text-gray-800">Vue.js</span>
                 </div>
-                <div
-                    class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-yellow-500 to-yellow-600 rounded-xl flex items-center justify-center mb-4 shadow-md">
-                            <i class="fab fa-python text-2xl text-white"></i>
-                        </div>
-                        <span class="font-semibold text-gray-800">Django</span>
+
+                <div class="magic-tech-item">
+                    <div class="magic-tech-icon magic-icon-amber">
+                        <i class="fab fa-python text-2xl text-white"></i>
                     </div>
+                    <span class="font-semibold text-gray-800">Django</span>
                 </div>
-                <div
-                    class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-blue-600 to-blue-700 rounded-xl flex items-center justify-center mb-4 shadow-md">
-                            <i class="fab fa-wordpress text-2xl text-white"></i>
-                        </div>
-                        <span class="font-semibold text-gray-800">WordPress</span>
+
+                <div class="magic-tech-item">
+                    <div class="magic-tech-icon magic-icon-blue">
+                        <i class="fab fa-wordpress text-2xl text-white"></i>
                     </div>
+                    <span class="font-semibold text-gray-800">WordPress</span>
                 </div>
-                <div
-                    class="group bg-white p-6 rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2">
-                    <div class="flex flex-col items-center">
-                        <div
-                            class="w-16 h-16 bg-gradient-to-br from-purple-500 to-purple-600 rounded-xl flex items-center justify-center mb-4 shadow-md">
-                            <i class="fab fa-php text-2xl text-white"></i>
-                        </div>
-                        <span class="font-semibold text-gray-800">PHP</span>
+
+                <div class="magic-tech-item">
+                    <div class="magic-tech-icon magic-icon-purple">
+                        <i class="fab fa-php text-2xl text-white"></i>
                     </div>
+                    <span class="font-semibold text-gray-800">PHP</span>
                 </div>
             </div>
         </div>
@@ -444,56 +442,54 @@
     <!-- Projects Section -->
     <section id="projects" class="py-24 bg-gradient-to-b from-white to-gray-50 relative overflow-hidden">
         <div class="absolute inset-0">
-            <div class="absolute top-1/4 left-10 w-72 h-72 bg-blue-500/10 rounded-full blur-3xl"></div>
-            <div class="absolute bottom-1/4 right-10 w-72 h-72 bg-purple-500/10 rounded-full blur-3xl"></div>
+            <!-- Magic UI Background Effects -->
+            <div class="magic-background-glow glow-blue"></div>
+            <div class="magic-background-glow glow-purple"></div>
         </div>
+
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
-                <div class="inline-block px-6 py-2 rounded-full bg-gradient-to-r from-blue-100 to-purple-100 mb-4">
-                    <span class="text-sm font-medium gradient-text">PORTFÓLIO</span>
+                <div>
+                    <div class="magic-section-badge mb-4">
+                        <span class="text-sm font-medium gradient-text">PORTFÓLIO</span>
+                    </div>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Meus <span class="gradient-text">Projetos</span></h2>
-                <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 magic-heading">
+                    Meus <span class="gradient-text magic-text">Projetos</span>
+                </h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto magic-subheading">
                     Soluções inovadoras que transformam ideias em experiências digitais
                 </p>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- Project 1 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-2xl card-hover relative">
-                    <div class="relative h-56 overflow-hidden">
+                <!-- Project 1 - Magic UI Project Card -->
+                <div class="magic-project-card group">
+                    <div class="magic-project-image">
                         <img src="https://images.unsplash.com/photo-1555421689-3f034debb7a6?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                            alt="Task Management App"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute top-4 right-4">
-                            <span class="px-4 py-2 bg-green-500 text-white text-sm font-medium rounded-full shadow-lg">
-                                Django
-                            </span>
+                            alt="Task Management App" class="group-hover:scale-110 transition-transform duration-700">
+                        <div class="magic-project-overlay"></div>
+                        <div class="magic-project-tag magic-tag-green">
+                            Django
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3
-                            class="text-2xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                    <div class="magic-project-content">
+                        <h3 class="magic-project-title">
                             Aplicativo de Gerenciamento de Tarefas
                         </h3>
-                        <p class="text-gray-600 mb-6">
+                        <p class="magic-project-description">
                             Sistema colaborativo com atualizações em tempo real, gestão de equipes e análises avançadas.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span
-                                class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">Python</span>
-                            <span
-                                class="px-3 py-1 bg-green-100 text-green-800 text-sm font-medium rounded-full">Django</span>
-                            <span
-                                class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full">MySQL</span>
+                        <div class="magic-project-tags">
+                            <span class="magic-tag magic-tag-blue">Python</span>
+                            <span class="magic-tag magic-tag-green">Django</span>
+                            <span class="magic-tag magic-tag-amber">MySQL</span>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-gray-500 hover:text-gray-700 font-medium">
+                        <div class="magic-project-footer">
+                            <a href="#" class="magic-project-link">
                                 <i class="fas fa-eye-slash mr-2"></i> Disponível em breve
                             </a>
-                            <div
-                                class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-blue-100 group-hover:text-blue-600 transition-colors duration-300">
+                            <div class="magic-project-arrow">
                                 <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
@@ -501,43 +497,34 @@
                 </div>
 
                 <!-- Project 2 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-2xl card-hover relative">
-                    <div class="relative h-56 overflow-hidden">
+                <div class="magic-project-card group">
+                    <div class="magic-project-image">
                         <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80"
-                            alt="Corporate Website"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute top-4 right-4">
-                            <span class="px-4 py-2 bg-black text-white text-sm font-medium rounded-full shadow-lg">
-                                TailwindCSS
-                            </span>
+                            alt="Corporate Website" class="group-hover:scale-110 transition-transform duration-700">
+                        <div class="magic-project-overlay"></div>
+                        <div class="magic-project-tag magic-tag-dark">
+                            TailwindCSS
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3
-                            class="text-2xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                    <div class="magic-project-content">
+                        <h3 class="magic-project-title">
                             Website Corporativo
                         </h3>
-                        <p class="text-gray-600 mb-6">
+                        <p class="magic-project-description">
                             Tema personalizado com TailwindCSS, otimização SEO avançada e alto desempenho.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span
-                                class="px-3 py-1 bg-orange-100 text-orange-800 text-sm font-medium rounded-full">HTML</span>
-                            <span
-                                class="px-3 py-1 bg-blue-100 text-blue-800 text-sm font-medium rounded-full">CSS</span>
-                            <span
-                                class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full">JavaScript</span>
-                            <span
-                                class="px-3 py-1 bg-teal-100 text-teal-800 text-sm font-medium rounded-full">Tailwind</span>
+                        <div class="magic-project-tags">
+                            <span class="magic-tag magic-tag-orange">HTML</span>
+                            <span class="magic-tag magic-tag-blue">CSS</span>
+                            <span class="magic-tag magic-tag-amber">JavaScript</span>
+                            <span class="magic-tag magic-tag-teal">Tailwind</span>
                         </div>
-                        <div class="flex justify-between items-center">
+                        <div class="magic-project-footer">
                             <a href="https://edmoafricatrading.com" target="_blank" rel="noopener noreferrer"
-                                class="text-blue-600 hover:text-blue-800 font-medium">
+                                class="magic-project-link magic-link-external">
                                 <i class="fas fa-eye mr-2"></i> Visitar Site
                             </a>
-                            <div
-                                class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-blue-100 group-hover:text-blue-600 transition-colors duration-300">
+                            <div class="magic-project-arrow">
                                 <i class="fas fa-external-link-alt"></i>
                             </div>
                         </div>
@@ -545,41 +532,33 @@
                 </div>
 
                 <!-- Project 3 -->
-                <div class="group bg-white rounded-3xl overflow-hidden shadow-2xl card-hover relative">
-                    <div class="relative h-56 overflow-hidden">
+                <div class="magic-project-card group">
+                    <div class="magic-project-image">
                         <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
-                            alt="CRM System"
-                            class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700">
-                        <div class="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent"></div>
-                        <div class="absolute top-4 right-4">
-                            <span class="px-4 py-2 bg-blue-600 text-white text-sm font-medium rounded-full shadow-lg">
-                                PHP
-                            </span>
+                            alt="CRM System" class="group-hover:scale-110 transition-transform duration-700">
+                        <div class="magic-project-overlay"></div>
+                        <div class="magic-project-tag magic-tag-blue">
+                            PHP
                         </div>
                     </div>
-                    <div class="p-8">
-                        <h3
-                            class="text-2xl font-bold mb-3 text-gray-900 group-hover:text-blue-600 transition-colors duration-300">
+                    <div class="magic-project-content">
+                        <h3 class="magic-project-title">
                             Sistema de CRM
                         </h3>
-                        <p class="text-gray-600 mb-6">
+                        <p class="magic-project-description">
                             Sistema completo para gestão de relacionamento com clientes, rastreamento de leads e
                             relatórios detalhados.
                         </p>
-                        <div class="flex flex-wrap gap-2 mb-6">
-                            <span
-                                class="px-3 py-1 bg-purple-100 text-purple-800 text-sm font-medium rounded-full">PHP</span>
-                            <span
-                                class="px-3 py-1 bg-gray-100 text-gray-800 text-sm font-medium rounded-full">MVC</span>
-                            <span
-                                class="px-3 py-1 bg-yellow-100 text-yellow-800 text-sm font-medium rounded-full">MySQL</span>
+                        <div class="magic-project-tags">
+                            <span class="magic-tag magic-tag-purple">PHP</span>
+                            <span class="magic-tag magic-tag-gray">MVC</span>
+                            <span class="magic-tag magic-tag-amber">MySQL</span>
                         </div>
-                        <div class="flex justify-between items-center">
-                            <a href="#" class="text-gray-500 hover:text-gray-700 font-medium">
+                        <div class="magic-project-footer">
+                            <a href="#" class="magic-project-link">
                                 <i class="fas fa-eye-slash mr-2"></i> Disponível em breve
                             </a>
-                            <div
-                                class="w-10 h-10 bg-gray-100 rounded-full flex items-center justify-center group-hover:bg-blue-100 group-hover:text-blue-600 transition-colors duration-300">
+                            <div class="magic-project-arrow">
                                 <i class="fas fa-arrow-right"></i>
                             </div>
                         </div>
@@ -591,58 +570,54 @@
 
     <!-- Contact Section -->
     <section id="contact" class="py-24 bg-gradient-to-b from-gray-900 to-gray-950 text-white relative overflow-hidden">
+        <!-- Magic UI Background Effects -->
         <div class="absolute inset-0">
-            <div class="absolute top-0 left-0 w-full h-full">
-                <div class="absolute top-20 left-1/4 w-96 h-96 bg-blue-500/5 rounded-full blur-3xl"></div>
-                <div class="absolute bottom-20 right-1/4 w-96 h-96 bg-purple-500/5 rounded-full blur-3xl"></div>
-            </div>
+            <div class="magic-background-glow glow-blue-large opacity-10"></div>
+            <div class="magic-background-glow glow-purple-large opacity-10"></div>
         </div>
 
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
             <div class="text-center mb-16">
-                <div
-                    class="inline-block px-6 py-2 rounded-full bg-white/10 backdrop-blur-sm border border-white/20 mb-4">
-                    <span class="text-sm font-medium text-white">CONTATO</span>
+                <div>
+                    <div class="magic-section-badge-dark mb-4">
+                        <span class="text-sm font-medium text-white">CONTATO</span>
+                    </div>
                 </div>
-                <h2 class="text-4xl md:text-5xl font-bold mb-6">Vamos <span class="gradient-text">Trabalhar
-                        Juntos</span></h2>
-                <p class="text-xl text-gray-300 max-w-3xl mx-auto">
+                <h2 class="text-4xl md:text-5xl font-bold mb-6 magic-heading-dark">
+                    Vamos <span class="gradient-text magic-text">Trabalhar Juntos</span>
+                </h2>
+                <p class="text-xl text-gray-300 max-w-3xl mx-auto magic-subheading-dark">
                     Pronto para transformar sua ideia em realidade? Entre em contato e vamos conversar!
                 </p>
             </div>
 
             <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
-                <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 shadow-2xl">
+                <!-- Magic UI Form Card -->
+                <div class="magic-form-card">
                     <h3 class="text-2xl font-bold mb-8 text-white">Envie uma Mensagem</h3>
                     <form id="whatsappForm" class="space-y-6">
                         <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label for="name" class="block text-gray-300 mb-3 font-medium">Seu Nome</label>
-                                <input type="text" id="name"
-                                    class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
-                                    placeholder="Seu nome completo" required>
+                                <input type="text" id="name" class="magic-input" placeholder="Seu nome completo"
+                                    required>
                             </div>
                             <div>
                                 <label for="email" class="block text-gray-300 mb-3 font-medium">Seu Email</label>
-                                <input type="email" id="email"
-                                    class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
-                                    placeholder="seu@email.com" required>
+                                <input type="email" id="email" class="magic-input" placeholder="seu@email.com" required>
                             </div>
                         </div>
                         <div>
                             <label for="subject" class="block text-gray-300 mb-3 font-medium">Assunto</label>
-                            <input type="text" id="subject"
-                                class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300"
+                            <input type="text" id="subject" class="magic-input"
                                 placeholder="Sobre o que gostaria de conversar?" required>
                         </div>
                         <div>
                             <label for="message" class="block text-gray-300 mb-3 font-medium">Mensagem</label>
-                            <textarea id="message" rows="5"
-                                class="w-full px-6 py-4 bg-white/5 border border-white/10 rounded-xl text-white placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition duration-300 resize-none"
+                            <textarea id="message" rows="5" class="magic-textarea"
                                 placeholder="Conte-me mais sobre seu projeto..." required></textarea>
                         </div>
-                        <button type="submit"
-                            class="group w-full px-8 py-4 bg-gradient-to-r from-blue-500 to-blue-600 hover:from-blue-600 hover:to-blue-700 text-white rounded-xl font-bold text-lg transition-all duration-300 transform hover:-translate-y-1 shadow-lg hover:shadow-2xl">
+                        <button type="submit" class="magic-button-primary magic-button-large w-full">
                             <span class="relative z-10">Enviar Mensagem</span>
                             <i class="fas fa-paper-plane ml-3 transition-transform group-hover:translate-x-2"></i>
                         </button>
@@ -650,7 +625,8 @@
                 </div>
 
                 <div class="space-y-8">
-                    <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 shadow-2xl">
+                    <!-- Magic UI Contact Info Card -->
+                    <div class="magic-contact-card">
                         <h3 class="text-2xl font-bold mb-8 text-white">Informações de Contato</h3>
                         <p class="text-gray-300 mb-8 text-lg">
                             Estou disponível para oportunidades de trabalho freelance e em tempo integral.
@@ -658,9 +634,8 @@
                         </p>
 
                         <div class="space-y-6">
-                            <div class="flex items-start group">
-                                <div
-                                    class="bg-gradient-to-br from-blue-500 to-blue-600 p-4 rounded-2xl mr-5 group-hover:scale-110 transition-transform duration-300">
+                            <div class="magic-contact-item">
+                                <div class="magic-contact-icon magic-icon-blue">
                                     <i class="fas fa-map-marker-alt text-xl"></i>
                                 </div>
                                 <div>
@@ -669,9 +644,8 @@
                                 </div>
                             </div>
 
-                            <div class="flex items-start group">
-                                <div
-                                    class="bg-gradient-to-br from-green-500 to-green-600 p-4 rounded-2xl mr-5 group-hover:scale-110 transition-transform duration-300">
+                            <div class="magic-contact-item">
+                                <div class="magic-contact-icon magic-icon-green">
                                     <i class="fas fa-envelope text-xl"></i>
                                 </div>
                                 <div>
@@ -680,9 +654,8 @@
                                 </div>
                             </div>
 
-                            <div class="flex items-start group">
-                                <div
-                                    class="bg-gradient-to-br from-purple-500 to-purple-600 p-4 rounded-2xl mr-5 group-hover:scale-110 transition-transform duration-300">
+                            <div class="magic-contact-item">
+                                <div class="magic-contact-icon magic-icon-purple">
                                     <i class="fas fa-phone-alt text-xl"></i>
                                 </div>
                                 <div>
@@ -693,27 +666,28 @@
                         </div>
                     </div>
 
-                    <div class="bg-white/5 backdrop-blur-sm border border-white/10 rounded-3xl p-8 shadow-2xl">
+                    <!-- Magic UI Social Card -->
+                    <div class="magic-social-card">
                         <h3 class="text-2xl font-bold mb-6 text-white">Conecte-se Comigo</h3>
                         <p class="text-gray-300 mb-6">
                             Siga-me nas redes sociais para ver mais do meu trabalho e me manter atualizado.
                         </p>
-                        <div class="flex flex-wrap gap-4">
+                        <div class="magic-social-links">
                             <a href="https://github.com/Deilton8" target="_blank" rel="noopener noreferrer"
-                                class="group w-14 h-14 bg-white/10 hover:bg-black border border-white/10 rounded-2xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
-                                <i class="fab fa-github text-xl group-hover:text-white"></i>
+                                class="magic-social-link magic-social-github">
+                                <i class="fab fa-github text-xl"></i>
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="group w-14 h-14 bg-white/10 hover:bg-blue-700 border border-white/10 rounded-2xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
-                                <i class="fab fa-linkedin-in text-xl group-hover:text-white"></i>
+                                class="magic-social-link magic-social-linkedin">
+                                <i class="fab fa-linkedin-in text-xl"></i>
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="group w-14 h-14 bg-white/10 hover:bg-pink-600 border border-white/10 rounded-2xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
-                                <i class="fab fa-instagram text-xl group-hover:text-white"></i>
+                                class="magic-social-link magic-social-instagram">
+                                <i class="fab fa-instagram text-xl"></i>
                             </a>
                             <a href="#" target="_blank" rel="noopener noreferrer"
-                                class="group w-14 h-14 bg-white/10 hover:bg-blue-600 border border-white/10 rounded-2xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-2 hover:shadow-2xl">
-                                <i class="fab fa-facebook-f text-xl group-hover:text-white"></i>
+                                class="magic-social-link magic-social-facebook">
+                                <i class="fab fa-facebook-f text-xl"></i>
                             </a>
                         </div>
                     </div>
@@ -731,32 +705,24 @@
                     <p class="text-gray-400 text-lg">Desenvolvedor Full Stack</p>
                 </div>
                 <div class="flex flex-wrap justify-center gap-8">
-                    <a href="#home"
-                        class="text-gray-400 hover:text-white hover:gradient-text font-medium transition-colors duration-300">Home</a>
-                    <a href="#about"
-                        class="text-gray-400 hover:text-white hover:gradient-text font-medium transition-colors duration-300">Sobre</a>
-                    <a href="#skills"
-                        class="text-gray-400 hover:text-white hover:gradient-text font-medium transition-colors duration-300">Habilidades</a>
-                    <a href="#projects"
-                        class="text-gray-400 hover:text-white hover:gradient-text font-medium transition-colors duration-300">Projetos</a>
-                    <a href="#contact"
-                        class="text-gray-400 hover:text-white hover:gradient-text font-medium transition-colors duration-300">Contato</a>
+                    <a href="#home" class="magic-footer-link">Home</a>
+                    <a href="#about" class="magic-footer-link">Sobre</a>
+                    <a href="#skills" class="magic-footer-link">Habilidades</a>
+                    <a href="#projects" class="magic-footer-link">Projetos</a>
+                    <a href="#contact" class="magic-footer-link">Contato</a>
                 </div>
                 <div class="flex justify-center md:justify-end space-x-6">
                     <a href="https://github.com/Deilton8" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-white hover:scale-110 transition-all duration-300">
+                        class="magic-footer-social">
                         <i class="fab fa-github text-2xl"></i>
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-white hover:scale-110 transition-all duration-300">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="magic-footer-social">
                         <i class="fab fa-linkedin-in text-2xl"></i>
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-white hover:scale-110 transition-all duration-300">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="magic-footer-social">
                         <i class="fab fa-instagram text-2xl"></i>
                     </a>
-                    <a href="#" target="_blank" rel="noopener noreferrer"
-                        class="text-gray-400 hover:text-white hover:scale-110 transition-all duration-300">
+                    <a href="#" target="_blank" rel="noopener noreferrer" class="magic-footer-social">
                         <i class="fab fa-facebook-f text-2xl"></i>
                     </a>
                 </div>
@@ -770,13 +736,15 @@
 
     <!-- Back to Top Button -->
     <a href="#home" id="backToTop"
-        class="fixed bottom-8 right-8 bg-gradient-to-br from-blue-500 to-blue-600 text-white p-4 rounded-2xl shadow-2xl hover:shadow-3xl transition-all duration-300 transform hover:-translate-y-2 opacity-0 pointer-events-none group">
+        class="magic-back-to-top fixed bottom-8 right-8 text-white p-4 rounded-2xl shadow-2xl group opacity-0 pointer-events-none">
         <i class="fas fa-chevron-up text-xl"></i>
         <div
             class="absolute inset-0 bg-white/20 rounded-2xl blur opacity-0 group-hover:opacity-100 transition duration-300">
         </div>
     </a>
 
+    <!-- Particle.js Library -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
     <script src="script.js"></script>
 </body>
 
