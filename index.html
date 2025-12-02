@@ -32,63 +32,158 @@
     <div id="particles-js" class="fixed inset-0 z-0"></div>
 
     <!-- Navigation -->
-    <nav class="bg-white/80 backdrop-blur-md shadow-sm sticky top-0 z-50 border-b border-gray-200/50">
+    <nav class="bg-white/90 backdrop-blur-xl shadow-lg sticky top-0 z-50 border-b border-gray-300/20">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div class="flex justify-between h-20">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo com efeito melhorado -->
                 <div class="flex items-center">
                     <a href="#home" class="relative group">
-                        <!-- Logotipo como imagem -->
-                        <img src="uploads/logo.png" alt="Deilton Matusse Logo"
-                            class="h-20 w-20 transition-all duration-300 group-hover:scale-110"
-                            onerror="this.onerror=null; this.src='https://via.placeholder.com/100x40/3b82f6/ffffff?text=DM+Logo';">
-                        <!-- Efeito de blur no hover -->
-                        <div
-                            class="absolute inset-0 bg-gradient-to-r from-blue-500 to-purple-500 rounded-lg blur opacity-0 group-hover:opacity-50 transition duration-300 -z-10">
+                        <div class="relative p-1">
+                            <img src="uploads/logo.png" alt="Deilton Matusse Logo"
+                                class="h-20 w-auto transition-all duration-500 group-hover:scale-105 group-hover:rotate-3"
+                                onerror="this.onerror=null; this.src='https://via.placeholder.com/80x80/3b82f6/ffffff?text=DM'; this.classList.add('p-2')">
                         </div>
                     </a>
                 </div>
-                <div class="hidden md:flex items-center space-x-8">
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-1">
                     <a href="#home"
-                        class="nav-link active relative px-3 py-2 rounded-lg hover:bg-gray-100 transition duration-300">
-                        <span class="relative z-10">Home</span>
+                        class="nav-link magic-nav-item relative px-5 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group">
+                        <i
+                            class="fas fa-home text-blue-500 mr-2 group-hover:text-blue-600 transition-colors duration-300"></i>
+                        <span class="relative z-10 font-medium text-gray-700 group-hover:text-gray-900">Home</span>
+                        <div
+                            class="absolute bottom-0 left-1/2 w-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-full transition-all duration-300 group-hover:w-4/5 -translate-x-1/2">
+                        </div>
                     </a>
+
                     <a href="#about"
-                        class="nav-link relative px-3 py-2 rounded-lg hover:bg-gray-100 transition duration-300">
-                        <span class="relative z-10">Sobre</span>
+                        class="nav-link magic-nav-item relative px-5 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group">
+                        <i
+                            class="fas fa-user text-purple-500 mr-2 group-hover:text-purple-600 transition-colors duration-300"></i>
+                        <span class="relative z-10 font-medium text-gray-700 group-hover:text-gray-900">Sobre</span>
+                        <div
+                            class="absolute bottom-0 left-1/2 w-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-full transition-all duration-300 group-hover:w-4/5 -translate-x-1/2">
+                        </div>
                     </a>
+
                     <a href="#skills"
-                        class="nav-link relative px-3 py-2 rounded-lg hover:bg-gray-100 transition duration-300">
-                        <span class="relative z-10">Habilidades</span>
+                        class="nav-link magic-nav-item relative px-5 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group">
+                        <i
+                            class="fas fa-code text-green-500 mr-2 group-hover:text-green-600 transition-colors duration-300"></i>
+                        <span
+                            class="relative z-10 font-medium text-gray-700 group-hover:text-gray-900">Habilidades</span>
+                        <div
+                            class="absolute bottom-0 left-1/2 w-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-full transition-all duration-300 group-hover:w-4/5 -translate-x-1/2">
+                        </div>
                     </a>
+
                     <a href="#projects"
-                        class="nav-link relative px-3 py-2 rounded-lg hover:bg-gray-100 transition duration-300">
-                        <span class="relative z-10">Projetos</span>
+                        class="nav-link magic-nav-item relative px-5 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group">
+                        <i
+                            class="fas fa-briefcase text-orange-500 mr-2 group-hover:text-orange-600 transition-colors duration-300"></i>
+                        <span class="relative z-10 font-medium text-gray-700 group-hover:text-gray-900">Projetos</span>
+                        <div
+                            class="absolute bottom-0 left-1/2 w-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-full transition-all duration-300 group-hover:w-4/5 -translate-x-1/2">
+                        </div>
                     </a>
+
                     <a href="#contact"
-                        class="nav-link relative px-3 py-2 rounded-lg hover:bg-gray-100 transition duration-300">
-                        <span class="relative z-10">Contato</span>
+                        class="nav-link magic-nav-item relative px-5 py-3 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group">
+                        <i
+                            class="fas fa-envelope text-pink-500 mr-2 group-hover:text-pink-600 transition-colors duration-300"></i>
+                        <span class="relative z-10 font-medium text-gray-700 group-hover:text-gray-900">Contato</span>
+                        <div
+                            class="absolute bottom-0 left-1/2 w-0 h-1 bg-gradient-to-r from-blue-500 to-purple-500 rounded-t-full transition-all duration-300 group-hover:w-4/5 -translate-x-1/2">
+                        </div>
                     </a>
                 </div>
+
+                <!-- Mobile menu button -->
                 <div class="md:hidden flex items-center">
-                    <button id="menu-btn" class="text-gray-500 hover:text-gray-900 transition duration-300">
-                        <i class="fas fa-bars text-2xl"></i>
+                    <button id="menu-btn"
+                        class="relative p-3 text-gray-600 hover:text-gray-900 transition duration-300 group">
+                        <div
+                            class="absolute inset-0 bg-gradient-to-r from-blue-100 to-purple-100 rounded-xl opacity-0 group-hover:opacity-100 transition duration-300">
+                        </div>
+                        <i class="fas fa-bars text-2xl relative z-10"></i>
                     </button>
                 </div>
             </div>
         </div>
+
         <!-- Mobile menu -->
-        <div id="mobile-menu" class="hidden md:hidden bg-white/95 backdrop-blur-md pb-4 px-4 shadow-lg">
-            <div class="flex flex-col space-y-3">
+        <div id="mobile-menu"
+            class="hidden md:hidden bg-white/98 backdrop-blur-xl pb-6 px-4 shadow-2xl border-t border-gray-200/50 animate-slideDown">
+            <div class="flex flex-col space-y-2 py-4">
                 <a href="#home"
-                    class="nav-link active px-4 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Home</a>
+                    class="mobile-nav-link px-5 py-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group flex items-center">
+                    <i
+                        class="fas fa-home text-blue-500 text-lg mr-3 group-hover:text-blue-600 transition-colors duration-300"></i>
+                    <span class="font-medium text-gray-700 group-hover:text-gray-900">Home</span>
+                    <i
+                        class="fas fa-chevron-right text-gray-400 ml-auto group-hover:text-blue-500 transition-colors duration-300"></i>
+                </a>
+
                 <a href="#about"
-                    class="nav-link px-4 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Sobre</a>
+                    class="mobile-nav-link px-5 py-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group flex items-center">
+                    <i
+                        class="fas fa-user text-purple-500 text-lg mr-3 group-hover:text-purple-600 transition-colors duration-300"></i>
+                    <span class="font-medium text-gray-700 group-hover:text-gray-900">Sobre</span>
+                    <i
+                        class="fas fa-chevron-right text-gray-400 ml-auto group-hover:text-purple-500 transition-colors duration-300"></i>
+                </a>
+
                 <a href="#skills"
-                    class="nav-link px-4 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Habilidades</a>
+                    class="mobile-nav-link px-5 py-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group flex items-center">
+                    <i
+                        class="fas fa-code text-green-500 text-lg mr-3 group-hover:text-green-600 transition-colors duration-300"></i>
+                    <span class="font-medium text-gray-700 group-hover:text-gray-900">Habilidades</span>
+                    <i
+                        class="fas fa-chevron-right text-gray-400 ml-auto group-hover:text-green-500 transition-colors duration-300"></i>
+                </a>
+
                 <a href="#projects"
-                    class="nav-link px-4 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Projetos</a>
+                    class="mobile-nav-link px-5 py-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group flex items-center">
+                    <i
+                        class="fas fa-briefcase text-orange-500 text-lg mr-3 group-hover:text-orange-600 transition-colors duration-300"></i>
+                    <span class="font-medium text-gray-700 group-hover:text-gray-900">Projetos</span>
+                    <i
+                        class="fas fa-chevron-right text-gray-400 ml-auto group-hover:text-orange-500 transition-colors duration-300"></i>
+                </a>
+
                 <a href="#contact"
-                    class="nav-link px-4 py-3 rounded-lg hover:bg-gray-100 transition duration-300">Contato</a>
+                    class="mobile-nav-link px-5 py-4 rounded-xl hover:bg-gradient-to-r hover:from-blue-50 hover:to-purple-50 transition-all duration-300 group flex items-center">
+                    <i
+                        class="fas fa-envelope text-pink-500 text-lg mr-3 group-hover:text-pink-600 transition-colors duration-300"></i>
+                    <span class="font-medium text-gray-700 group-hover:text-gray-900">Contato</span>
+                    <i
+                        class="fas fa-chevron-right text-gray-400 ml-auto group-hover:text-pink-500 transition-colors duration-300"></i>
+                </a>
+            </div>
+
+            <!-- Redes sociais mobile -->
+            <div class="pt-4 border-t border-gray-200 mt-4">
+                <p class="text-gray-600 text-sm mb-3 px-5">Conecte-se comigo:</p>
+                <div class="flex justify-center space-x-4 px-5">
+                    <a href="https://github.com/Deilton8" target="_blank" rel="noopener noreferrer"
+                        class="w-12 h-12 bg-gray-100 hover:bg-black text-gray-600 hover:text-white rounded-xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                        <i class="fab fa-github text-xl"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="w-12 h-12 bg-gray-100 hover:bg-blue-700 text-gray-600 hover:text-white rounded-xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                        <i class="fab fa-linkedin-in text-xl"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="w-12 h-12 bg-gray-100 hover:bg-pink-600 text-gray-600 hover:text-white rounded-xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" target="_blank" rel="noopener noreferrer"
+                        class="w-12 h-12 bg-gray-100 hover:bg-blue-600 text-gray-600 hover:text-white rounded-xl flex items-center justify-center transition-all duration-300 transform hover:-translate-y-1 hover:shadow-lg">
+                        <i class="fab fa-facebook-f text-xl"></i>
+                    </a>
+                </div>
             </div>
         </div>
     </nav>
